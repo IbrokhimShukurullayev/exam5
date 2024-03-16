@@ -1,0 +1,85 @@
+@import "../utils/variables";
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: $white-color;
+  box-shadow: 0px 0px 8px 0px rgba(51, 51, 51, 0.2);
+  &__top {
+    background: rgb(69, 79, 91);
+    .top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 0;
+      @media (min-width: 600px) {
+        flex-direction: row;
+      }
+    }
+    h2 {
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 26px;
+      letter-spacing: 12%;
+      text-align: left;
+      text-align: center;
+    }
+    p {
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 26px;
+      letter-spacing: 12%;
+      text-align: left;
+      text-decoration-line: underline;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  &__list {
+    display: none;
+    align-items: center;
+    column-gap: 32px;
+    @media (min-width: 900px) {
+      display: flex;
+    }
+  }
+  &__link {
+    color: rgb(22, 28, 36);
+    // font-family: SF Pro Text;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  &__end {
+    display: flex;
+    align-items: center;
+    column-gap: 35px;
+    a {
+      display: none;
+      align-items: center;
+      color: rgb(69, 79, 91);
+      font-family: SF Pro Display;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: 0%;
+      text-align: left;
+      gap: 5px;
+      @media (min-width: 420px) {
+        display: flex;
+      }
+    }
+  }
+}

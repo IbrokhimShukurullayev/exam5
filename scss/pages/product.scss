@@ -1,0 +1,71 @@
+@import "../main.scss";
+
+#home {
+  padding-top: 150px;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 150px 0;
+  img {
+    width: 100%;
+  }
+  &__title {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  &__text,
+  &__list {
+    color: rgb(69, 79, 91);
+    max-width: 360px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  &__text {
+    padding: 20px 0;
+  }
+  &__price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0 25px 0;
+    h2 {
+      color: rgb(22, 28, 36);
+      // font-family: SF Pro Text;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0%;
+      text-align: left;
+      max-width: 85px;
+    }
+    p {
+      color: rgb(69, 79, 91);
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 21px;
+      letter-spacing: 0%;
+      text-align: left;
+      text-decoration-line: line-through;
+    }
+  }
+  button {
+    color: rgb(255, 255, 255);
+    padding: 12px 70px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+    background: rgb(66, 149, 228);
+  }
+}
