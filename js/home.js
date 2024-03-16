@@ -40,3 +40,11 @@ function createCard(data) {
 function singlePage(id) {
   window.open(`/pages/product.html?id=${id}`, "_self");
 }
+
+const loading = document.getElementById("loading");
+
+const loadingDuration = 1000; // 1s
+
+setTimeout(() => {
+  loading.classList.add("loading-none");
+}, loadingDuration);
