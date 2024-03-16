@@ -6,9 +6,13 @@
 
 .home {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 50px;
   padding: 150px 0;
+  @media (min-width: 840px) {
+    flex-direction: column;
+  }
   img {
     width: 100%;
   }

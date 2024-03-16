@@ -254,8 +254,8 @@
     justify-content: center;
     gap: 24px;
     @media (min-width: 840px) {
-    flex-direction: row;
-  }
+      flex-direction: row;
+    }
     // input::placeholder {
     //   color: rgb(69, 79, 91);
     //   font-size: 16px;
